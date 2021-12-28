@@ -324,3 +324,57 @@ footer {
   margin-top: -40px;
   padding-bottom: 40px;
 }
+
+.crumb {
+  text-decoration: none;
+  color: #4c4c4c;
+}
+
+.home-crumb {
+  color: var(--context-red);
+  margin-left: 10%;
+}
+
+.menu-content ul li {
+  list-style-type: none;
+  cursor: pointer;
+  line-height: 30px;
+}
+
+.menu-content ul li a:hover {
+  border-bottom: 2px solid var(--context-red);
+}
+
+.menu-content ul li a {
+  text-decoration: none;
+  color: var(--black-background);
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  justify-content: center;
+}
+
+.card-menu {
+  margin-left: 70px;
+}
+
+.menu-content {
+  margin-left: 10%;
+}
+
+.about-header {
+  background-image: url("../assets/images/about.jpg");
+}
+
+h1 {
+  color: var(--text-white);
+}
