@@ -504,3 +504,45 @@ footer {
   border-bottom-left-radius: 5px;
   border-bottom: 1px solid var(--context-red);
 }
+
+#add-comment {
+  margin-top: 100px;
+  width: 470px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid var(--black-background) !important;
+}
+
+#add-comment:focus {
+  outline: none !important;
+  border: 1px solid var(--faded-red) !important;
+}
+
+.recommend-order-img {
+  width: 170px;
+  height: 123px;
+}
+
+.recommend-order-img {
+  width: 170px;
+  height: 123px;
+}
+
+.comment-recommend {
+  margin-top: 90px;
+}
+
+.price-tag {
+  color: var(--faded-red);
+}
+
+.order-box {
+  margin-top: 30px;
+}
+
+.order-box-mini {
+  border: 1px solid #c4c4c4b2;
+  padding-left: 20px;
+  /* height: 190px; */
+  margin-bottom: 30px;
+}
