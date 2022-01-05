@@ -514,7 +514,7 @@ footer {
 }
 
 #add-comment {
-  margin-top: 100px;
+  margin-top: 30px;
   width: 470px;
   height: 50px;
   border-radius: 5px;
@@ -637,6 +637,12 @@ footer {
   cursor: pointer;
 }
 
+.add-item {
+  color: var(--light-grey);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .go-to-back {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -662,4 +668,86 @@ footer {
 .second-footer p {
   margin-top: 50px;
   color: var(--light-grey);
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------Sign up Page css------------------------------------------------*/
+
+.continue-version {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-left: 250px;
+}
+
+.continue-version a {
+  text-decoration: none;
+  border-right: 2px solid var(--light-grey);
+  padding-right: 10px;
+  color: var(--light-grey);
+}
+
+.continue-version li {
+  margin-left: 30px;
+  color: var(--light-grey);
+}
+
+.active-continue {
+  color: var(--faded-red) !important;
+}
+
+.signup-box {
+  width: 630px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 350px;
+  margin-top: 100px;
+  padding-bottom: 100px;
+
+  padding: 30px 30px 50px 30px;
+  box-shadow: 0 5px 5px -5px var(--stroke-gray),
+    -5px 0 5px -5px var(--stroke-gray), 5px 0 5px -5px var(--stroke-gray);
+  margin-bottom: 100px;
+}
+
+.label-box,
+.input-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-box label {
+  height: 70px;
+}
+
+.input-box {
+  margin-left: 100px;
+}
+
+.input-box input {
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 1px solid var(--stroke-gray);
+  padding-left: 20px;
+}
+
+.input-box input:focus {
+  outline: none !important;
+  border: 1px solid var(--faded-red) !important;
+}
+
+.login-done {
+  width: 630px;
+  background-color: var(--faded-red);
+  color: var(--text-white);
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-left: -3px;
 }
