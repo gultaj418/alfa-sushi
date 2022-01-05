@@ -9,6 +9,7 @@
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .first-header {
@@ -21,11 +22,53 @@ body {
   background-size: cover;
   background-image: url("../assets/images/home-background.jpg");
 }
+.nav-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.nav-header .logo {
+  margin-left: 6rem;
+}
 
-.logo img {
-  /* position: absolute; */
-  margin-left: 10%;
-  margin-top: 20px;
+.search-bar {
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 200ms ease;
+}
+.search-bar.active {
+  visibility: visible;
+  opacity: 1;
+}
+.search-bar span.search {
+  position: absolute;
+  top: -20px;
+  left: 1.2rem;
+  font-size: 15px;
+  /* font: weight 1px; */
+}
+.search-bar .search-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 660px;
+  height: 43px;
+  border: 3px solid var(--context-red);
+  background-color: var(--text-white);
+  border-radius: 150px;
+}
+.search-input input {
+  flex: 1;
+}
+
+.search-input input,
+button {
+  border: 0;
+  outline: none;
+  background: none;
+  padding: 0 1.7rem;
 }
 
 .first-line-menu {
@@ -33,12 +76,22 @@ body {
   /* height: 100px; */
   color: var(--text-white);
 }
+.first-line-menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .first-line-menu ul li {
   list-style-type: none;
   margin-left: 40px;
   margin-right: 20px;
   cursor: pointer;
+  transition: all 400ms ease;
+}
+li#search.deactive {
+  visibility: hidden;
+  opacity: 0;
 }
 
 .first-line-menu ul li:hover {
@@ -49,7 +102,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: end;
-  margin-top: 40px;
 }
 
 #lang {
@@ -240,6 +292,7 @@ p {
 }
 
 .contact-column-first {
+  color: #000000;
 }
 
 /*--------------------------------------footer---------------------------------*/
@@ -280,12 +333,6 @@ footer {
   padding-top: 3px;
   /* padding-bottom: 10px; */
   background-color: var(--black-background);
-}
-
-.logo img {
-  position: absolute;
-  margin-left: 10%;
-  margin-top: 20px;
 }
 
 .second-version {
