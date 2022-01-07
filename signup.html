@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/sign-login.css" />
-
     <title>Document</title>
   </head>
   <body>
@@ -43,19 +42,35 @@
     </section>
 
     <ul class="continue-version">
-      <li><a class="active-continue" href="login.html">LOG IN</a></li>
-      <li><a href="signup.html"> SIGN UP</a></li>
+      <li><a href="login.html">LOG IN</a></li>
+      <li><a class="active-continue" href="signup.html"> SIGNUP</a></li>
       <li>CONTINUE WITHOUT ACCOUNT</li>
     </ul>
 
     <div class="signup-box">
       <div class="label-box">
-        <label for="email">Email or phone</label>
-        <label for="password">Password:</label>
+        <label for="name"> Name Surname:</label>
+        <label for="phone">Phone:</label>
+        <label for="email">Email:</label>
+        <label for="adress">Adress:</label>
       </div>
       <div class="input-box">
+        <input
+          id="name"
+          class="sign-login"
+          type="text"
+          placeholder="Name Surname"
+        />
+        <input id="phone" class="sign-login" type="tel" placeholder="phone" />
+
         <input id="email" class="sign-login" type="email" placeholder="email" />
-        <input type="password" id="password" placeholder="password" />
+
+        <input
+          id="adress"
+          class="sign-login"
+          type="text"
+          placeholder="address"
+        />
       </div>
       <button class="login-done">Done</button>
     </div>
