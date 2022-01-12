@@ -70,10 +70,18 @@
   box-shadow: 0 0 2px var(--stroke-gray);
 }
 
+.container {
+  margin: 0 200px;
+}
+
+#select-item {
+  margin-left: 60px;
+}
+
 .container-row {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .item-total,
