@@ -3,6 +3,32 @@ const search = document.querySelector("#search");
 const searchBar = document.querySelector(".search-bar");
 const plusOrder = document.querySelectorAll(".plus");
 const minusOrder = document.querySelectorAll(".minus");
+const langChanger = document.querySelector("#lang");
+const langSection = document.querySelector(".language-section");
+const svgRotator = document.querySelector(".svg-class");
+const languages = document.querySelectorAll(".language");
+const hamburger = document.querySelector(".hamburger-menu");
+const blackMobileMenu = document.querySelector(".black-menu");
+
+console.log(hamburger);
+//haburger menu
+hamburger.addEventListener("click", () => {
+  console.log(hamburger);
+  blackMobileMenu.classList.toggle("active");
+});
+
+//Language changer
+langChanger.addEventListener("click", () => {
+  langSection.classList.toggle("active");
+  svgRotator.classList.toggle("active");
+  langChanger.classList.toggle("active");
+  languages.forEach((language) => {
+    language.addEventListener("click", () => {
+      language.classList.toggle("active");
+      langChanger.textContent = language.textContent;
+    });
+  });
+});
 
 //EventListeners
 search.addEventListener("click", () => {

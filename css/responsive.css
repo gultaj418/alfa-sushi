@@ -6,3 +6,22 @@
     height: 200px;
   }
 }
+
+@media only screen and (max-width: 650px) {
+  #lang,
+  #search {
+    visibility: hidden;
+  }
+
+  .hamburger-menu {
+    display: block !important;
+  }
+
+  .main-list {
+    display: none;
+  }
+
+  .black-menu.active {
+    display: block !important;
+  }
+}

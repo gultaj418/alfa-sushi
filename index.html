@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/responsive.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Document</title>
+    <title>Home</title>
   </head>
   <body>
     <header class="first-header">
@@ -15,12 +15,27 @@
           <img src="./assets/icons/LOGOlogo header (1).png" alt="" />
         </div>
 
+        <div class="hamburger-menu">
+          <div class="line first-line"></div>
+          <div class="line middle-line"></div>
+          <div class="line last-line"></div>
+        </div>
+
+        <div class="black-menu">
+          <ul>
+            <li><a href="menu.html"> MENU</a></li>
+            <li><a href="address.html">FILIALLAR</a></li>
+            <li><a href="order.html">SIFARISLER</a></li>
+            <li><a href="about-us.html">HAQQIMIZDA</a></li>
+          </ul>
+        </div>
+
         <div class="first-line-menu">
           <ul>
             <div class="search-bar">
-              <span class="search">Search</span>
+              <span class="search">SEARCH</span>
               <div class="search-input">
-                <input type="text" / placeholder="TYPE HERE">
+                <input type="text" placeholder="TYPE HERE" />
                 <button>
                   <svg
                     width="8"
@@ -40,47 +55,68 @@
                 </button>
               </div>
             </div>
-            <li id="search">Search</li>
-            <li>Bag(0)</li>
+            <li id="search">SEARCH</li>
+            <li><a id="bag" href="order.html"> BAG(0)</a></li>
+
             <li id="lang">
-              Russian
-              <img id="arrow-lang" src="./assets/icons/Vector (2).svg" alt="" />
+              RUS
+              <svg
+                class="svg-class"
+                width="11"
+                height="7"
+                viewBox="0 0 11 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  id="arrow-lang"
+                  d="M1 1.43176L5.5 5.31813L10 1.43176"
+                  stroke="#C4C4C4"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </li>
+
+            <div class="language-section">
+              <div class="language">AZ</div>
+              <div class="language">ENG</div>
+              <div class="language">RUS</div>
+            </div>
           </ul>
         </div>
       </div>
       <div class="main-list">
         <ul>
-
           <li><a href="menu.html"> MENU</a></li>
           <li><a href="address.html">FILIALLAR</a></li>
           <li><a href="order.html">SIFARISLER</a></li>
           <li><a href="about-us.html">HAQQIMIZDA</a></li>
-
         </ul>
       </div>
-      <div class="second-line-menu">
+      <!-- <div class="second-line-menu">
         <ul>
-          <li>Sushi roll</li>
+          <li>SUSHI ROLL</li>
 
-          <li>Nigiri</li>
-          <li>Cold Sushi</li>
+          <li>NIGIRI</li>
+          <li>COLD SUSHI</li>
 
-          <li>Balik ekmek</li>
+          <li>BALIK EKMEK</li>
 
-          <li>Fried rice</li>
+          <li>FRIED RICE</li>
         </ul>
-      </div>
+      </div> -->
     </header>
-    <section id="new">
-      <div class="tag">
-        <h4>New</h4>
+    <!-- <section id="new">
+      <div class="tag tag-new">
+        <h4>NEW</h4>
       </div>
       <div class="list-cards">
         <div class="cards">
           <img src="./assets/images/sushi-card-1.jpg" alt="" />
           <div class="card-content">
-            <h4>Salmon set</h4>
+            <h4>SALMON SET</h4>
             <p>Salmon ,crab,avocado,rice</p>
             <span class="price">20 Azn</span>
             <div class="order-bar">
@@ -96,8 +132,8 @@
                 </div>
               </div>
               <div class="add-order">
-                <span>Add order</span>
-                <span>20 Azn</span>
+                <span>Add to order</span>
+                <span>20 AZN</span>
               </div>
             </div>
           </div>
@@ -105,7 +141,7 @@
         <div class="cards card-middle">
           <img src="./assets/images/sushi-card-1.jpg" alt="" />
           <div class="card-content">
-            <h4>Salmon set</h4>
+            <h4>SALMON SET</h4>
             <p>Salmon ,crab,avocado,rice</p>
             <span class="price">20 Azn</span>
             <div class="order-bar">
@@ -130,7 +166,7 @@
         <div class="cards">
           <img src="./assets/images/sushi-card-1.jpg" alt="" />
           <div class="card-content">
-            <h4>Salmon set</h4>
+            <h4>SALMON SET</h4>
             <p>Salmon ,crab,avocado,rice</p>
             <span class="price">20 Azn</span>
             <div class="order-bar">
@@ -163,7 +199,7 @@
         <div class="cards">
           <img src="./assets/images/sushi-card-1.jpg" alt="" />
           <div class="card-content">
-            <h4>Salmon set</h4>
+            <h4>SALMON SET</h4>
             <p>Salmon ,crab,avocado,rice</p>
             <span class="price">20 Azn</span>
             <div class="order-bar">
@@ -188,7 +224,7 @@
         <div class="cards card-middle">
           <img src="./assets/images/sushi-card-1.jpg" alt="" />
           <div class="card-content">
-            <h4>Salmon set</h4>
+            <h4>SALMON SET</h4>
             <p>Salmon ,crab,avocado,rice</p>
             <span class="price">20 Azn</span>
             <div class="order-bar">
@@ -213,7 +249,7 @@
         <div class="cards">
           <img src="./assets/images/sushi-card-1.jpg" alt="" />
           <div class="card-content">
-            <h4>Salmon set</h4>
+            <h4>SALMON SET</h4>
             <p>Salmon ,crab,avocado,rice</p>
             <span class="price">20 Azn</span>
             <div class="order-bar">
@@ -238,7 +274,7 @@
         <div class="cards">
           <img src="./assets/images/sushi-card-1.jpg" alt="" />
           <div class="card-content">
-            <h4>Salmon set</h4>
+            <h4>SALMON SET</h4>
             <p>Salmon ,crab,avocado,rice</p>
             <span class="price">20 Azn</span>
             <div class="order-bar">
@@ -263,7 +299,7 @@
         <div class="cards card-middle">
           <img src="./assets/images/sushi-card-1.jpg" alt="" />
           <div class="card-content">
-            <h4>Salmon set</h4>
+            <h4>SALMON SET</h4>
             <p>Salmon ,crab,avocado,rice</p>
             <span class="price">20 Azn</span>
             <div class="order-bar">
@@ -288,7 +324,7 @@
         <div class="cards">
           <img src="./assets/images/sushi-card-1.jpg" alt="" />
           <div class="card-content">
-            <h4>Salmon set</h4>
+            <h4>SALMON SET</h4>
             <p>Salmon ,crab,avocado,rice</p>
             <span class="price">20 Azn</span>
             <div class="order-bar">
@@ -345,9 +381,9 @@
           <img src="./assets/images/location-map.jpg" alt="" />
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="logo">
         <img src="./assets/icons/LOGOlogo header (1).png" alt="" />
       </div>
@@ -357,12 +393,12 @@
           <h4>Elmlar Filiali</h4>
           <h4>+99450 366 77 70</h4>
         </div>
-        <div class="branch">
+        <div class="branch branch-adjami">
           <h4>Adjami Filiali</h4>
           <h4>+99450 366 77 70</h4>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <script src="/js/index.js"></script>
   </body>
 </html>
