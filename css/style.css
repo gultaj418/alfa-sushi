@@ -20,6 +20,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Helvetica", sans-serif;
 }
 
 .hamburger-menu {
@@ -518,7 +519,7 @@ footer {
 .second-header {
   width: 100%;
   padding-top: 3px;
-  /* padding-bottom: 10px; */
+  padding: 1rem 0rem;
   background-color: var(--black-background);
 }
 

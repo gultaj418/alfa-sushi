@@ -6,7 +6,7 @@ const minusOrder = document.querySelectorAll(".minus");
 const langChanger = document.querySelector("#lang");
 const langSection = document.querySelector(".language-section");
 const svgRotator = document.querySelector(".svg-class");
-const languages = document.querySelectorAll(".language");
+// const languageSection = document.querySelectorAll(".language-section");
 const hamburger = document.querySelector(".hamburger-menu");
 const blackMobileMenu = document.querySelector(".black-menu");
 
@@ -22,11 +22,26 @@ langChanger.addEventListener("click", () => {
   langSection.classList.toggle("active");
   svgRotator.classList.toggle("active");
   langChanger.classList.toggle("active");
-  languages.forEach((language) => {
-    language.addEventListener("click", () => {
-      language.classList.toggle("active");
-      langChanger.textContent = language.textContent;
-    });
+  // languages.forEach((language) => {
+  //   language.addEventListener("click", () => {
+  //     if (language !== null) {
+  //       language.classList.remove("active");
+  //     }
+  //     language.className = "active";
+  //     // if (language.className.match("active") === null) {
+  //     //   language.classList.add("active");
+  //     // } else {
+  //     // }
+  //
+  //   });
+  // });
+  langSection.addEventListener("click", (e) => {
+    lang = langSection.querySelector(".language.active");
+    if (lang !== null) {
+      lang.classList.remove("active");
+    }
+    e.target.classList.add("active");
+    langChanger.textContent = e.target.textContent;
   });
 });
 
