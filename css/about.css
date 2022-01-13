@@ -36,6 +36,11 @@
   align-items: center;
 }
 
+.chef-right-card {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .chef-content {
   width: 480px;
 }

@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./owl.carousel.min.css" />
+    <link rel="stylesheet" href="./owl.theme.default.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+
     <title>Home</title>
   </head>
   <body>
@@ -95,7 +98,7 @@
           <li><a href="about-us.html">HAQQIMIZDA</a></li>
         </ul>
       </div>
-      <!-- <div class="second-line-menu">
+      <div class="second-line-menu">
         <ul>
           <li>SUSHI ROLL</li>
 
@@ -106,11 +109,15 @@
 
           <li>FRIED RICE</li>
         </ul>
-      </div> -->
+      </div>
     </header>
-    <!-- <section id="new">
+    <section id="new">
       <div class="tag tag-new">
         <h4>NEW</h4>
+      </div>
+
+      <div class="arrow-icon arrow-down-icon">
+        <img src="./assets/images/Group (4).png" alt="" />
       </div>
       <div class="list-cards">
         <div class="cards">
@@ -195,8 +202,8 @@
       <div class="tag tag-recommended">
         <h4>RECOMMENDED</h4>
       </div>
-      <div class="list-cards">
-        <div class="cards">
+      <div class="list-cards owl-carousel">
+        <div class="cards card-mobile">
           <img src="./assets/images/sushi-card-1.jpg" alt="" />
           <div class="card-content">
             <h4>SALMON SET</h4>
@@ -221,7 +228,7 @@
             </div>
           </div>
         </div>
-        <div class="cards card-middle">
+        <div class="cards card-middle card-mobile">
           <img src="./assets/images/sushi-card-1.jpg" alt="" />
           <div class="card-content">
             <h4>SALMON SET</h4>
@@ -246,7 +253,32 @@
             </div>
           </div>
         </div>
-        <div class="cards">
+        <div class="cards card-mobile">
+          <img src="./assets/images/sushi-card-1.jpg" alt="" />
+          <div class="card-content">
+            <h4>SALMON SET</h4>
+            <p>Salmon ,crab,avocado,rice</p>
+            <span class="price mobile-price">20 Azn</span>
+            <div class="order-bar">
+              <div class="count-regulator">
+                <div class="minus">
+                  <img src="./assets/icons/minus-icon.svg" alt="" />
+                </div>
+                <div class="count-num">
+                  <span>0</span>
+                </div>
+                <div class="plus">
+                  <img src="./assets/icons/plus-icon.svg" alt="" />
+                </div>
+              </div>
+              <div class="add-order">
+                <span>Add order</span>
+                <span>20 Azn</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cards card-mobile">
           <img src="./assets/images/sushi-card-1.jpg" alt="" />
           <div class="card-content">
             <h4>SALMON SET</h4>
@@ -271,7 +303,7 @@
             </div>
           </div>
         </div>
-        <div class="cards">
+        <div class="cards card-middle card-mobile">
           <img src="./assets/images/sushi-card-1.jpg" alt="" />
           <div class="card-content">
             <h4>SALMON SET</h4>
@@ -296,34 +328,9 @@
             </div>
           </div>
         </div>
-        <div class="cards card-middle">
+        <div class="cards card-mobile">
           <img src="./assets/images/sushi-card-1.jpg" alt="" />
-          <div class="card-content">
-            <h4>SALMON SET</h4>
-            <p>Salmon ,crab,avocado,rice</p>
-            <span class="price">20 Azn</span>
-            <div class="order-bar">
-              <div class="count-regulator">
-                <div class="minus">
-                  <img src="./assets/icons/minus-icon.svg" alt="" />
-                </div>
-                <div class="count-num">
-                  <span>0</span>
-                </div>
-                <div class="plus">
-                  <img src="./assets/icons/plus-icon.svg" alt="" />
-                </div>
-              </div>
-              <div class="add-order">
-                <span>Add order</span>
-                <span>20 Azn</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="cards">
-          <img src="./assets/images/sushi-card-1.jpg" alt="" />
-          <div class="card-content">
+          <div class="card-content card-content-mobile">
             <h4>SALMON SET</h4>
             <p>Salmon ,crab,avocado,rice</p>
             <span class="price">20 Azn</span>
@@ -357,15 +364,33 @@
         <div class="contact-content">
           <div class="contact-column-first">
             <h4>Openning hours</h4>
-            <p>
-              Mon-Sat <br />
-              10.00-23.00
-            </p>
+            <div class="day-open">
+              <p>
+                Mon-Sat <br />
+                10.00-23.00
+              </p>
+              <p>
+                Saturday <br />
+                10.00-23.00
+              </p>
+            </div>
+            <hr class="contact-hr" />
             <h4>Email</h4>
             <p>info@sushialfa.az</p>
+            <hr class="contact-hr" />
             <h4>Social</h4>
-            <span>Instagram</span>
-            <span>Facebook</span>
+            <div class="social-accounts">
+              <p>
+                <a href="https://www.instagram.com/" target="_blank"
+                  >Instagram</a
+                >
+              </p>
+              <p>
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+              </p>
+            </div>
+
+            <hr class="contact-hr" />
           </div>
           <div class="contact-column-second">
             <h4>Address</h4>
@@ -373,6 +398,7 @@
               Huseyn Seyidzade 29, <br />
               Baku, AZERBAIJAN
             </p>
+            <hr class="contact-hr" />
             <h4>Phone</h4>
             <p>+994504808467</p>
           </div>
@@ -381,9 +407,15 @@
           <img src="./assets/images/location-map.jpg" alt="" />
         </div>
       </div>
-    </section> -->
+    </section>
 
-    <!-- <footer class="footer">
+    <section class="up">
+      <div class="arrow-icon arrow-up-icon">
+        <img src="./assets/images/Group (5).png" alt="" />
+      </div>
+    </section>
+
+    <footer class="footer">
       <div class="logo">
         <img src="./assets/icons/LOGOlogo header (1).png" alt="" />
       </div>
@@ -398,7 +430,14 @@
           <h4>+99450 366 77 70</h4>
         </div>
       </div>
-    </footer> -->
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     <script src="/js/index.js"></script>
   </body>
 </html>

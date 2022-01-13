@@ -24,4 +24,118 @@
   .black-menu.active {
     display: block !important;
   }
+  .contact-map img {
+    display: none;
+  }
+
+  .day-open {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .arrow-up-icon {
+    margin-left: 0px;
+  }
+
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-hr {
+    display: block;
+  }
+
+  .social-accounts {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact-column-second {
+    margin-left: 0px;
+  }
+
+  .branches {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .order-bar {
+    display: none;
+  }
+
+  .cards {
+    width: 470px;
+    display: flex;
+    flex-direction: row-reverse;
+    /* border-radius: 5px; */
+    /* margin-top: 30px; */
+    border: 1px solid #c4c4c4b2;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  .cards img {
+    width: 170px;
+    height: 130px;
+    margin-top: 0px;
+  }
+
+  .card-middle {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .card-content h4,
+  p {
+    margin-left: 5px;
+  }
+
+  .price {
+    position: static;
+    margin-left: 5px;
+  }
+
+  .second-line-menu {
+    display: none;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+  }
+
+  .card-mobile {
+    box-shadow: 0px 2px 4px rgba(187, 187, 187, 0.25);
+    width: 370px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    margin-bottom: 90px;
+    display: block;
+  }
+
+  .card-content-mobile {
+    position: relative;
+  }
+
+  .card-content-mobile h4,
+  p {
+    margin-left: 10px;
+  }
+
+  .mobile-prize {
+    position: absolute;
+    top: 0;
+    right: 10px;
+  }
+
+  .card-mobile img {
+    width: 310px;
+    height: 220px;
+  }
 }

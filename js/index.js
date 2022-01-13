@@ -9,6 +9,11 @@ const svgRotator = document.querySelector(".svg-class");
 const languages = document.querySelectorAll(".language");
 const hamburger = document.querySelector(".hamburger-menu");
 const blackMobileMenu = document.querySelector(".black-menu");
+const bagCounter = document.querySelector("#bag");
+const downIcon = document.querySelector(".arrow-down-icon");
+const upIcon = document.querySelector(".arrow-up-icon");
+const upIconOffset = upIcon.offsetHeight;
+const x = window.matchMedia("(max-width: 768px)");
 
 console.log(hamburger);
 //haburger menu
@@ -48,6 +53,7 @@ searchBar.addEventListener(
 
 plusOrder.forEach(function (el) {
   let num = 0;
+  // let counter = 0;
 
   el.addEventListener("click", () => {
     let addOrder = el.parentNode.nextElementSibling;
@@ -64,6 +70,9 @@ plusOrder.forEach(function (el) {
     minusOrder.classList.add("active");
     countSpan.innerHTML = parseInt(countSpan.innerHTML) + 1;
     addOrder.textContent = `${countSpan.textContent * 20} AZN`;
+
+    // counter += countSpan.innerHTML;
+    // bagCounter.textContent = `Bag (${counter})`;
   });
 });
 minusOrder.forEach(function (el) {
@@ -90,4 +99,57 @@ minusOrder.forEach(function (el) {
       console.log("object");
     }
   });
+});
+
+//slider responsive
+
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 40,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+
+        loop: true,
+      },
+      600: {
+        items: 1,
+
+        loop: true,
+      },
+      1000: {
+        items: 3,
+
+        loop: true,
+      },
+    },
+  });
+});
+
+//smooth beahvior scroll
+downIcon.addEventListener("click", () => {
+  window.scrollTo({
+    top: 2000,
+    behavior: "smooth",
+  });
+});
+
+upIcon.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 100 && window.scrollY < 1800) {
+    downIcon.classList.add("active");
+  } else if (
+    window.scrollY == 0 ||
+    (window.scrollY > 1850 && window.scrollY < 1900)
+  ) {
+    downIcon.classList.remove("active");
+  }
 });
