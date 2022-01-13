@@ -33,6 +33,13 @@
     flex-direction: row;
   }
 
+  .arrow-down-icon {
+    right: 42%;
+    display: flex;
+    bottom: 20px;
+    position: absolute;
+  }
+
   .arrow-up-icon {
     margin-left: 0px;
   }
@@ -56,6 +63,12 @@
   }
 
   .branches {
+    display: none;
+  }
+  .call {
+    display: flex;
+  }
+  .second-line-menu {
     display: none;
   }
 }
@@ -94,10 +107,6 @@
   .price {
     position: static;
     margin-left: 5px;
-  }
-
-  .second-line-menu {
-    display: none;
   }
 
   .contact {
