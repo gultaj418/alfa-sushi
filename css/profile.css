@@ -1,3 +1,38 @@
+.second-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.line-menu ul {
+  margin-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  /* margin-left: 0; */
+}
+.line-menu ul li#lang {
+  width: fit-content;
+  margin-right: 0;
+  padding-left: 0;
+}
+.nav-version .branch:last-child {
+  margin-right: 0;
+}
+.nav-version .branch:first-child {
+  margin-left: 0;
+}
+.line-menu ul li:first-child {
+  margin-left: 0;
+}
+.logo img {
+  margin: 0 0;
+}
+.line-menu {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .email-profile,
 .number {
   display: flex;

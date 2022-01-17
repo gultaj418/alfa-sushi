@@ -5,6 +5,7 @@
   --fade-button: #f1e9d9;
   --stroke-gray: #d6d6d6;
   --light-grey: #838383;
+  --dark-grey: #4c4c4c;
   --black-background: #000000;
 }
 
@@ -16,11 +17,49 @@
 
 /* @import url(../assets/fonts/helveticaa/HelveticaNeue-BlackCond.ttf); */
 
+/* * {
+  font-family: "Helvetica";
+} */
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Helvetica", sans-serif;
+}
+
+.arrow-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--black-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-down-icon {
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  display: none;
+}
+
+.arrow-up-icon {
+  margin-left: 800px;
+}
+
+.up {
+  display: flex;
+  justify-content: end;
+  padding-bottom: 20px;
+  margin-right: 50px;
+}
+
+.arrow-down-icon.active {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hamburger-menu {
@@ -312,7 +351,7 @@ li#search.deactive {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .tag h4 {
@@ -325,6 +364,7 @@ li#search.deactive {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   margin-top: 50px;
   flex-wrap: wrap;
 }
@@ -341,6 +381,7 @@ li#search.deactive {
   margin-right: 30px;
   margin-left: 30px;
 }
+
 .card-content {
   position: relative;
 }
@@ -434,6 +475,20 @@ p {
 
 /*------------------------------Contact (Get in touch section starts)---------------------------- */
 
+.call {
+  background-color: var(--context-red);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  display: none;
+}
+
 #contact {
   padding-bottom: 50px;
 }
@@ -457,6 +512,20 @@ p {
 
 .contact-column-second {
   margin-left: 62px;
+}
+
+.contact-content p {
+  color: var(--dark-grey);
+}
+
+.contact-content p a {
+  text-decoration: none;
+  color: var(--dark-grey);
+}
+
+.social-accounts {
+  display: flex;
+  flex-direction: row;
 }
 
 /*--------------------------------------footer---------------------------------*/
@@ -561,12 +630,17 @@ footer {
 }
 
 .breadcrumb {
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.go-to-back {
+  margin-top: 50px;
 }
 
 .crumb {
   text-decoration: none;
-  color: #4c4c4c;
+  color: var(--dark-grey);
 }
 
 .crumb-back {
@@ -600,4 +674,8 @@ footer {
 
 .active-continue {
   color: var(--faded-red) !important;
+}
+
+.contact-hr {
+  display: none;
 }

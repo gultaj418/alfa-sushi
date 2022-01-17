@@ -4,24 +4,87 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./owl.carousel.min.css" />
+    <link rel="stylesheet" href="./owl.theme.default.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/about.css" />
     <title>About us</title>
   </head>
   <body>
     <header class="first-header about-header">
-      <div class="logo">
-        <img src="./assets/icons/LOGOlogo header (1).png" alt="" />
-      </div>
-      <div class="first-line-menu">
-        <ul>
-          <li>Search</li>
-          <li>Bag(0)</li>
-          <li id="lang">
-            Russian
-            <img id="arrow-lang" src="./assets/icons/Vector (2).svg" alt="" />
-          </li>
-        </ul>
+      <div class="nav-header">
+        <div class="logo">
+          <img src="./assets/icons/LOGOlogo header (1).png" alt="" />
+        </div>
+        <div class="hamburger-menu">
+          <div class="line first-line"></div>
+          <div class="line middle-line"></div>
+          <div class="line last-line"></div>
+        </div>
+        <div class="black-menu">
+          <ul>
+            <li><a href="menu.html"> MENU</a></li>
+            <li><a href="address.html">FILIALLAR</a></li>
+            <li><a href="order.html">SIFARISLER</a></li>
+            <li><a href="about-us.html">HAQQIMIZDA</a></li>
+          </ul>
+        </div>
+        <div class="first-line-menu">
+          <ul>
+            <div class="search-bar">
+              <span class="search">SEARCH</span>
+              <div class="search-input">
+                <input type="text" placeholder="TYPE HERE" />
+                <button>
+                  <svg
+                    width="8"
+                    height="15"
+                    viewBox="0 0 8 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 14L6.61364 7.5L0.999999 1"
+                      stroke="#838383"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <li id="search">SEARCH</li>
+            <li><a id="bag" href="order.html"> BAG(0)</a></li>
+
+            <li id="lang">
+              RUS
+              <svg
+                class="svg-class"
+                width="11"
+                height="7"
+                viewBox="0 0 11 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  id="arrow-lang"
+                  d="M1 1.43176L5.5 5.31813L10 1.43176"
+                  stroke="#C4C4C4"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </li>
+
+            <div class="language-section">
+              <div class="language">AZ</div>
+              <div class="language">ENG</div>
+              <div class="language">RUS</div>
+            </div>
+          </ul>
+        </div>
       </div>
       <div class="main-list">
         <ul>
@@ -36,10 +99,9 @@
 
     <div class="container">
       <section class="chefs">
-      
         <div class="chef-left-card">
           <div class="chef-img">
-            <span class="chef-name" >name surnmae</span>
+            <span class="chef-name">name surnmae</span>
             <img src="./assets/images/chief-1.png" alt="" />
           </div>
           <div class="chef-content left">
@@ -54,73 +116,98 @@
             nisi, nisi. Sit integer mi dui tincidunt volutpat in imperdiet dui.
           </div>
         </div>
-        <div class="chef-right-card">
-          <div class="chef-left-card">
-           
-            <div class="chef-content">
-              Cum sodales posuere faucibus accumsan at netus in. Velit donec massa
-              varius aliquam id porttitor condimentum ultrices mattis. Nisl et,
-              volutpat lectus nibh vitae a bibendum bibendum. Imperdiet quisque
-              quis nibh facilisi arcu amet, condimentum in. Consequat est sociis
-              mattis amet donec vulputate sed nibh blandit. In neque, dolor sit
-              quis nisl bibendum posuere. Amet leo ultricies euismod varius eget
-              arcu ut eu sed. Vitae enim, aliquam molestie etiam. Velit in
-              porttitor at ullamcorper. Blandit ultricies mattis morbi amet et
-              nisi, nisi. Sit integer mi dui tincidunt volutpat in imperdiet dui.
-            </div>
-            <div class="chef-img left">
-              <span class="chef-name">name surnmae</span>
-              <img src="./assets/images/chief-2.jpg" alt="" />
-            </div>
+
+        <div class="chef-left-card chef-right-card">
+          <div class="chef-img left">
+            <span class="chef-name">name surnmae</span>
+            <img src="./assets/images/chief-2.jpg" alt="" />
+          </div>
+          <div class="chef-content">
+            Cum sodales posuere faucibus accumsan at netus in. Velit donec massa
+            varius aliquam id porttitor condimentum ultrices mattis. Nisl et,
+            volutpat lectus nibh vitae a bibendum bibendum. Imperdiet quisque
+            quis nibh facilisi arcu amet, condimentum in. Consequat est sociis
+            mattis amet donec vulputate sed nibh blandit. In neque, dolor sit
+            quis nisl bibendum posuere. Amet leo ultricies euismod varius eget
+            arcu ut eu sed. Vitae enim, aliquam molestie etiam. Velit in
+            porttitor at ullamcorper. Blandit ultricies mattis morbi amet et
+            nisi, nisi. Sit integer mi dui tincidunt volutpat in imperdiet dui.
+          </div>
         </div>
-    
-    </section>
+      </section>
 
-    <section id="gallery">
-      <div class="gallery-first-line">
-        <img class="img-1"  src="./assets/images/sushi-card-5.png" alt="">
-        <div class="gallery-info">
-          <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius suscipit mollitia possimus? Porro optio aspernatur labore veniam numquam asperiores explicabo nihil qui pariatur aliquid, soluta neque cumque et! Quasi architecto commodi fugiat cupiditate repellat debitis accusamus expedita distinctio labore omnis!\</p>
+      <section id="gallery">
+        <div class="gallery-first-line">
+          <img class="img-1" src="./assets/images/sushi-card-5.png" alt="" />
+          <div class="gallery-info">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
+              suscipit mollitia possimus? Porro optio aspernatur labore veniam
+              numquam asperiores explicabo nihil qui pariatur aliquid, soluta
+              neque cumque et! Quasi architecto commodi fugiat cupiditate
+              repellat debitis accusamus expedita distinctio labore omnis!\
+            </p>
+          </div>
+
+          <img class="img-2" src="./assets/images/sushi-card-6.png" alt="" />
         </div>
-     
-      
-         <img  class="img-2" src="./assets/images/sushi-card-6.png" alt="">
-      </div>
 
-      <div class="gallery-heading">
-
-        <h1>GALLERY</h1>
-      </div>
-
-      <div class="gallery-second-line">
-        <img  class="img-2 img-3" src="./assets/images/sushi-card-7.png" alt="">
-        <div class="img-gallery-content">
-          <img class="img-4" src="./assets/images/sushi-card-9.jpg" alt="">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti soluta suscipit aspernatur, deserunt praesentium iste ipsa unde reiciendis asperiores tempora!
-            orem ipsum dolor sit amet 
-          </p>
+        <div class="gallery-heading">
+          <h1>GALLERY</h1>
         </div>
-      </div>
-    </section>
-    
+
+        <div class="gallery-second-line">
+          <img
+            class="img-2 img-3"
+            src="./assets/images/sushi-card-7.png"
+            alt=""
+          />
+          <div class="img-gallery-content">
+            <img class="img-4" src="./assets/images/sushi-card-9.jpg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+              soluta suscipit aspernatur, deserunt praesentium iste ipsa unde
+              reiciendis asperiores tempora! orem ipsum dolor sit amet
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
     <section id="contact">
-      <div class="tag">
+      <div class="tag get-in-touch-tag">
         <h4>GET IN TOUCH</h4>
       </div>
       <div class="contact">
         <div class="contact-content">
           <div class="contact-column-first">
             <h4>Openning hours</h4>
-            <p>
-              Mon-Sat <br />
-              10.00-23.00
-            </p>
+            <div class="day-open">
+              <p>
+                Mon-Sat <br />
+                10.00-23.00
+              </p>
+              <p>
+                Saturday <br />
+                10.00-23.00
+              </p>
+            </div>
+            <hr class="contact-hr" />
             <h4>Email</h4>
             <p>info@sushialfa.az</p>
+            <hr class="contact-hr" />
             <h4>Social</h4>
-            <span>Instagram</span>
-            <span>Facebook</span>
+            <div class="social-accounts">
+              <p>
+                <a href="https://www.instagram.com/" target="_blank"
+                  >Instagram</a
+                >
+              </p>
+              <p>
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+              </p>
+            </div>
+
+            <hr class="contact-hr" />
           </div>
           <div class="contact-column-second">
             <h4>Address</h4>
@@ -128,6 +215,7 @@
               Huseyn Seyidzade 29, <br />
               Baku, AZERBAIJAN
             </p>
+            <hr class="contact-hr" />
             <h4>Phone</h4>
             <p>+994504808467</p>
           </div>
@@ -154,6 +242,12 @@
         </div>
       </div>
     </footer>
- 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./owl.carousel.min.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

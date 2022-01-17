@@ -9,8 +9,12 @@ const svgRotator = document.querySelector(".svg-class");
 // const languageSection = document.querySelectorAll(".language-section");
 const hamburger = document.querySelector(".hamburger-menu");
 const blackMobileMenu = document.querySelector(".black-menu");
+const bagCounter = document.querySelector("#bag");
+const downIcon = document.querySelector(".arrow-down-icon");
+const upIcon = document.querySelector(".arrow-up-icon");
 
-console.log(hamburger);
+const x = window.matchMedia("(max-width: 768px)");
+
 //haburger menu
 hamburger.addEventListener("click", () => {
   console.log(hamburger);
@@ -50,6 +54,7 @@ searchBar.addEventListener(
 
 plusOrder.forEach(function (el) {
   let num = 0;
+  // let counter = 0;
 
   el.addEventListener("click", () => {
     let addOrder = el.parentNode.nextElementSibling;
@@ -66,6 +71,9 @@ plusOrder.forEach(function (el) {
     minusOrder.classList.add("active");
     countSpan.innerHTML = parseInt(countSpan.innerHTML) + 1;
     addOrder.textContent = `${countSpan.textContent * 20} AZN`;
+
+    // counter += countSpan.innerHTML;
+    // bagCounter.textContent = `Bag (${counter})`;
   });
 });
 minusOrder.forEach(function (el) {
@@ -94,20 +102,39 @@ minusOrder.forEach(function (el) {
   });
 });
 
-//Owl carousel
+
+//slider responsive
+
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
+    loop: true,
+
     margin: 40,
     responsiveClass: true,
     responsive: {
       0: {
         items: 1,
+
       },
       600: {
         items: 1,
       },
       1000: {
         items: 3,
+
+
+        
+      },
+      600: {
+        items: 1,
+
+       
+      },
+      1000: {
+        items: 3,
+
+       
+
       },
     },
   });
@@ -136,5 +163,6 @@ window.addEventListener("scroll", function () {
     (window.scrollY > 1850 && window.scrollY < 1900)
   ) {
     downIcon.classList.remove("btn-active");
+
   }
 });
