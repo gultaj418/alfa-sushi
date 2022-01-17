@@ -19,22 +19,9 @@ hamburger.addEventListener("click", () => {
 
 //Language changer
 langChanger.addEventListener("click", () => {
-  langSection.classList.toggle("active");
-  svgRotator.classList.toggle("active");
-  langChanger.classList.toggle("active");
-  // languages.forEach((language) => {
-  //   language.addEventListener("click", () => {
-  //     if (language !== null) {
-  //       language.classList.remove("active");
-  //     }
-  //     language.className = "active";
-  //     // if (language.className.match("active") === null) {
-  //     //   language.classList.add("active");
-  //     // } else {
-  //     // }
-  //
-  //   });
-  // });
+  langSection.classList.add("active");
+  svgRotator.classList.add("active");
+  langChanger.classList.add("active");
   langSection.addEventListener("click", (e) => {
     lang = langSection.querySelector(".language.active");
     if (lang !== null) {
@@ -105,4 +92,49 @@ minusOrder.forEach(function (el) {
       console.log("object");
     }
   });
+});
+
+//Owl carousel
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel({
+    margin: 40,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 1,
+      },
+      1000: {
+        items: 3,
+      },
+    },
+  });
+});
+
+//smooth beahvior scroll
+downIcon.addEventListener("click", () => {
+  window.scrollTo({
+    top: 2000,
+    behavior: "smooth",
+  });
+});
+
+upIcon.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 100 && window.scrollY < 1800) {
+    downIcon.classList.add("btn-active");
+  } else if (
+    window.scrollY == 0 ||
+    (window.scrollY > 1850 && window.scrollY < 1900)
+  ) {
+    downIcon.classList.remove("btn-active");
+  }
 });
