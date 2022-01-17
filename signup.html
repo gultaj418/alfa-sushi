@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/sign-login.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
     <title>Sign up</title>
   </head>
   <body>
@@ -49,27 +50,32 @@
 
     <div class="signup-box">
       <div class="label-box">
-        <label for="name"> Name Surname:</label>
-        <label for="phone">Phone:</label>
-        <label for="email">Email:</label>
-        <label for="adress">Adress:</label>
+        <label for="name"> NAME SURNAME:</label>
+        <label for="phone">PHONE:</label>
+        <label for="email">E-MAIL:</label>
+        <label for="adress">ADDRESS:</label>
       </div>
       <div class="input-box">
         <input
           id="name"
           class="sign-login"
           type="text"
-          placeholder="Name Surname"
+          placeholder="NAME SURNAME"
         />
-        <input id="phone" class="sign-login" type="tel" placeholder="phone" />
+        <input id="phone" class="sign-login" type="tel" placeholder="PHONE" />
 
-        <input id="email" class="sign-login" type="email" placeholder="email" />
+        <input
+          id="email"
+          class="sign-login"
+          type="email"
+          placeholder="E-MAIL"
+        />
 
         <input
           id="adress"
           class="sign-login"
           type="text"
-          placeholder="address"
+          placeholder="ADDRESS"
         />
       </div>
       <button class="login-done">Done</button>
