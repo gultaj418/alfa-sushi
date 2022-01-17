@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
+    <title>Document</title>
+    <style>
+      .cards {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid blue;
+        /* overflow-x: scroll; */
+      }
+      .item {
+        width: 200px !important;
+        height: 200px;
+        background-color: brown;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .item h4 {
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="cards">
+      <div class="card">
+        <h4>1</h4>
+      </div>
+      <div class="card">
+        <h4>2</h4>
+      </div>
+      <div class="card">
+        <h4>3</h4>
+      </div>
+      <div class="card">
+        <h4>4</h4>
+      </div>
+      <div class="card">
+        <h4>5</h4>
+      </div>
+      <div class="card">
+        <h4>6</h4>
+      </div>
+      <div class="card">
+        <h4>7</h4>
+      </div>
+      <div class="card">
+        <h4>8</h4>
+      </div>
+      <div class="card">
+        <h4>9</h4>
+      </div>
+      <div class="card">
+        <h4>10</h4>
+      </div>
+      <div class="card">
+        <h4>11</h4>
+      </div>
+      <div class="card">
+        <h4>12</h4>
+      </div>
+      <div class="card">
+        <h4>13</h4>
+      </div>
+      <div class="card">
+        <h4>14</h4>
+      </div>
+      <div class="card">
+        <h4>15</h4>
+      </div>
+      <div class="card">
+        <h4>16</h4>
+      </div>
+      <div class="card">
+        <h4>17</h4>
+      </div>
+      <div class="card">
+        <h4>18</h4>
+      </div>
+      <div class="card">
+        <h4>19</h4>
+      </div>
+      <div class="card">
+        <h4>20</h4>
+      </div>
+    </div> -->
+    <div class="cards owl-carousel">
+      <div class="item"><h4>1</h4></div>
+      <div class="item"><h4>2</h4></div>
+      <div class="item"><h4>3</h4></div>
+      <div class="item"><h4>4</h4></div>
+      <div class="item"><h4>5</h4></div>
+      <div class="item"><h4>6</h4></div>
+      <div class="item"><h4>7</h4></div>
+      <div class="item"><h4>8</h4></div>
+      <div class="item"><h4>9</h4></div>
+      <div class="item"><h4>10</h4></div>
+      <div class="item"><h4>11</h4></div>
+      <div class="item"><h4>12</h4></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+      const cards = document.querySelector(".cards");
+      const xWidth = window.matchMedia("(max-width: 600px)");
+      if (xWidth.matches) {
+        // console.log("object");
+       
+
+      }
+      console.log(window.innerWidth);
+    </script>
+  </body>
+</html>

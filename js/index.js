@@ -6,7 +6,7 @@ const minusOrder = document.querySelectorAll(".minus");
 const langChanger = document.querySelector("#lang");
 const langSection = document.querySelector(".language-section");
 const svgRotator = document.querySelector(".svg-class");
-const languages = document.querySelectorAll(".language");
+// const languageSection = document.querySelectorAll(".language-section");
 const hamburger = document.querySelector(".hamburger-menu");
 const blackMobileMenu = document.querySelector(".black-menu");
 const bagCounter = document.querySelector("#bag");
@@ -23,14 +23,16 @@ hamburger.addEventListener("click", () => {
 
 //Language changer
 langChanger.addEventListener("click", () => {
-  langSection.classList.toggle("active");
-  svgRotator.classList.toggle("active");
-  langChanger.classList.toggle("active");
-  languages.forEach((language) => {
-    language.addEventListener("click", () => {
-      language.classList.toggle("active");
-      langChanger.textContent = language.textContent;
-    });
+  langSection.classList.add("active");
+  svgRotator.classList.add("active");
+  langChanger.classList.add("active");
+  langSection.addEventListener("click", (e) => {
+    lang = langSection.querySelector(".language.active");
+    if (lang !== null) {
+      lang.classList.remove("active");
+    }
+    e.target.classList.add("active");
+    langChanger.textContent = e.target.textContent;
   });
 });
 
@@ -100,28 +102,39 @@ minusOrder.forEach(function (el) {
   });
 });
 
+
 //slider responsive
 
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     loop: true,
+
     margin: 40,
     responsiveClass: true,
     responsive: {
       0: {
         items: 1,
 
-        loop: true,
       },
       600: {
         items: 1,
-
-        loop: true,
       },
       1000: {
         items: 3,
 
-        loop: true,
+
+        
+      },
+      600: {
+        items: 1,
+
+       
+      },
+      1000: {
+        items: 3,
+
+       
+
       },
     },
   });
@@ -144,11 +157,12 @@ upIcon.addEventListener("click", () => {
 
 window.addEventListener("scroll", function () {
   if (window.scrollY > 100 && window.scrollY < 1800) {
-    downIcon.classList.add("active");
+    downIcon.classList.add("btn-active");
   } else if (
     window.scrollY == 0 ||
     (window.scrollY > 1850 && window.scrollY < 1900)
   ) {
-    downIcon.classList.remove("active");
+    downIcon.classList.remove("btn-active");
+
   }
 });
