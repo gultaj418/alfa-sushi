@@ -17,11 +17,7 @@
         <div class="logo">
           <img src="./assets/icons/LOGOlogo header (1).png" alt="" />
         </div>
-        <div class="hamburger-menu">
-          <div class="line first-line"></div>
-          <div class="line middle-line"></div>
-          <div class="line last-line"></div>
-        </div>
+
         <div class="black-menu">
           <ul>
             <li><a href="menu.html"> MENU</a></li>
@@ -57,7 +53,7 @@
               </div>
             </div>
             <li id="search">SEARCH</li>
-            <li><a id="bag" href="order.html"> BAG(0)</a></li>
+            <li class="bag-cont"><a id="bag" href="order.html"> BAG(0)</a></li>
 
             <li id="lang">
               RUS
@@ -87,17 +83,23 @@
             </div>
           </ul>
         </div>
+
+        <div class="hamburger-menu">
+          <div class="line first-line"></div>
+          <div class="line middle-line"></div>
+          <div class="line last-line"></div>
+        </div>
       </div>
-      <div class="main-list">
+      <nav class="main-list">
         <ul>
           <li><a href="menu.html"> MENU</a></li>
           <li><a href="address.html">FILIALLAR</a></li>
           <li><a href="order.html">SIFARISLER</a></li>
           <li><a href="about-us.html">HAQQIMIZDA</a></li>
         </ul>
-      </div>
+      </nav>
       <div class="second-line-menu">
-        <ul>
+        <ul class="owl-carousel">
           <li>SUSHI ROLL</li>
 
           <li>NIGIRI</li>
@@ -107,6 +109,13 @@
 
           <li>FRIED RICE</li>
         </ul>
+      </div>
+      <div class="mobile-heavy">
+      <div class="hamburger-heavy">
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+        </div>
       </div>
     </header>
 
@@ -401,8 +410,8 @@
           <div class="contact-column-second">
             <h4>Address</h4>
             <p>
-              Huseyn Seyidzade 29, <br />
-              Baku, AZERBAIJAN
+              Huseyn Seyidzade 29, <br class="desktop" />
+              Baku, <br  class="mobile"> AZERBAIJAN
             </p>
             <hr class="contact-hr" />
             <h4>Phone</h4>
@@ -410,18 +419,16 @@
           </div>
         </div>
         <div class="contact-map">
-          <img src="./assets/images/location-map.jpg" alt="" />
+          <img src="./assets/images/contact-map.png" alt="" />
         </div>
       </div>
     </section>
-
 
     <section class="up">
       <div class="arrow-icon arrow-up-icon">
         <img src="./assets/images/Group (5).png" alt="" />
       </div>
     </section>
-
 
     <footer class="footer">
       <div class="logo">
@@ -439,15 +446,9 @@
         </div>
       </div>
     </footer>
-   
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./owl.carousel.min.js"></script>
-
     <script src="/js/index.js"></script>
   </body>
 </html>
