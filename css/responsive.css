@@ -7,6 +7,96 @@
 }
 
 @media only screen and (max-width: 650px) {
+  .container {
+    width: auto;
+  }
+  .about-header h1 {
+    font-size: 60px;
+  }
+  .chefs {
+    display: flex;
+    overflow-x: scroll;
+    /* justify-content: space-between; */
+    /* margin-left: 2rem; */
+    /* gap: 0 4rem; */
+  }
+  .gallery-heading h1 {
+    font-size: 60px;
+    position: static;
+  }
+  .gallery-heading {
+    position: absolute;
+    top: -12%;
+    right: 3%;
+  }
+  .img-gallery-content {
+    width: 100%;
+  }
+  .img-gallery-content img {
+    width: 100%;
+    height: 100%;
+  }
+  .img-1-cont {
+    flex-direction: column;
+    margin-left: 2rem;
+  }
+  .img-2 {
+    margin-top: 0;
+    width: 270px;
+    height: 330px;
+  }
+  .img-3 {
+    display: none;
+  }
+  .img-4 {
+    width: 100%;
+  }
+  .img-gallery-content p {
+    width: 90%;
+    /* background-color: red; */
+    text-align: justify;
+    margin: 40px auto;
+  }
+  .gallery {
+    flex-direction: column;
+    display: flex;
+  }
+  .gallery-first-line {
+    flex-direction: row;
+    overflow-x: auto;
+    justify-content: unset;
+  }
+  .gallery-info p {
+    margin-left: 0px;
+  }
+  .gallery-second-line {
+    flex-direction: column;
+  }
+  .gallery-second-line img {
+    margin: 0 0;
+  }
+  .img-gallery-content {
+    margin: 0 0;
+    text-align: left;
+  }
+  .gallery-heading {
+    z-index: 99999;
+  }
+  .chef-left-card {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+  }
+  .left {
+    margin-left: 0px;
+  }
+  .chef-content {
+    margin: 0;
+    text-align: justify;
+    padding: 4%;
+    width: 100%;
+  }
   .nav-header {
     justify-content: space-around;
   }
@@ -43,6 +133,7 @@
   }
   .first-line-menu {
     width: fit-content;
+    margin-right: 0;
   }
   .first-line-menu ul {
     padding: 0;

@@ -459,14 +459,15 @@ p {
 }
 
 .minus,
-.plus,
-.count-num {
-  cursor: pointer;
-}
-.minus,
 .plus {
   background-color: var(--fade-button);
-  /* padding: 0.6rem 2.7rem; */
+}
+.minus,
+.plus,
+.count-num {
+  padding: 0.6rem 3rem;
+  cursor: pointer;
+  margin: 0 0.3rem;
 }
 /* .count-num {
   padding: 0.6rem 3.9rem;
@@ -486,7 +487,8 @@ p {
   width: 115px;
   height: 40px;
   /* gap: 0 25px; */
-  background-color: var(--fade-button);
+  /* background-color: var(--fade-button); */
+  background-color: transparent;
   border-radius: 5px;
   /* margin-left: 15px; */
 }
