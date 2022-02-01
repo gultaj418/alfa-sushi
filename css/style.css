@@ -429,6 +429,8 @@ li#search.deactive {
   align-items: center;
   margin-top: 50px;
   flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .cards {
@@ -437,7 +439,7 @@ li#search.deactive {
   padding-bottom: 20px;
   border-radius: 5px;
   margin-bottom: 90px;
-  margin: 0 auto !important;
+  /* margin: 0 auto !important; */
 }
 
 .card-middle {
