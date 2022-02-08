@@ -38,7 +38,9 @@
   }
   .img-1-cont {
     flex-direction: column;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
+    width: 270px;
+    margin: 0 20px;
   }
   .img-2 {
     margin-top: 0;
@@ -80,7 +82,7 @@
     text-align: left;
   }
   .gallery-heading {
-    z-index: 99999;
+    z-index: 99;
   }
   .chef-left-card {
     flex-direction: column;
@@ -98,14 +100,17 @@
     width: 100%;
   }
   .nav-header {
-    justify-content: space-around;
+    justify-content: space-around !important;
   }
   .nav-header .logo {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 0rem !important;
+    margin-right: 0rem;
+  }
+  .first-line-menu .bag-count {
+    margin: 0 0 !important;
   }
   .logo .img {
-    margin-left: 0% !important;
+    margin-left: 0%;
   }
   #lang,
   #search {
@@ -133,7 +138,7 @@
   }
   .first-line-menu {
     width: fit-content;
-    margin-right: 0;
+    margin-right: 0 !important;
   }
   .first-line-menu ul {
     padding: 0;
@@ -145,8 +150,8 @@
     display: none;
   }
   .first-line-menu ul li {
-    margin-left: 0px;
-    margin-right: 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 
   .main-list {
