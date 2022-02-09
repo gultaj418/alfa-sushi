@@ -97,6 +97,25 @@ body {
   margin-bottom: 10px;
 }
 
+.black-menu {
+  position: absolute;
+  top: 200px;
+  right: 30px;
+  visibility: hidden;
+  opacity: 0;
+  transition: ll 400ms ease;
+  margin-right: 0rem;
+  transition-delay: 0.2s;
+  z-index: 11;
+}
+.black-menu.btn-active {
+  visibility: visible;
+  opacity: 1;
+  transition: all 800ms ease;
+  margin-right: 1rem;
+  transition-delay: 0.25s;
+}
+
 .second-line-menu {
   background-color: var(--black-background);
   color: var(--text-white);
@@ -141,6 +160,27 @@ body {
   transition: 800ms all ease;
   background-color: var(--black-background);
 }
+
+.mobile-heavy .hamburger-heavy {
+  width: 80px;
+  height: 40px;
+  position: relative;
+  margin: 1rem;
+  visibility: hidden;
+  margin-left: 0rem;
+  /* transition: all 800ms ease; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-heavy .hamburger-heavy.btn-active {
+  visibility: visible;
+  transition: all 800ms ease;
+  transition-delay: 0.4s;
+  margin-left: 1rem;
+}
+
 .mobile-heavy.heavy-background {
   transform: translateX(0%);
   width: 100%;
@@ -303,10 +343,6 @@ p {
 
 /*------------------------------Contact (Get in touch section starts)---------------------------- */
 
-#contact {
-  /* padding-bottom: 50px; */
-}
-
 .contact {
   display: flex;
   flex-direction: row;
@@ -423,19 +459,37 @@ footer {
   /* justify-content: center; */
   color: var(--text-white);
 }
+.branch::after {
+  content: "";
+  width: 2.8px;
+  height: 43px;
+  background-color: var(--context-red);
+  position: absolute;
+  bottom: 0px;
+
+  right: -2px;
+  border-radius: 17px;
+}
 
 .branch {
-  border-right: 3px solid var(--context-red);
-  line-height: 5px;
+  /* line-height: 5px; */
   margin-right: 90px;
   margin-left: 40px;
+  position: relative;
+
+  padding-right: 10px;
 }
 .branch-adjami {
   margin-right: 200px;
 }
+.branches span {
+  text-align: end;
 
+  display: block;
+}
 .branches h4 {
-  padding-right: 10px;
+  margin-top: 4px;
+  margin: 0;
 }
 
 /*-----------------------------------------------------------------------*/

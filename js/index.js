@@ -9,12 +9,13 @@ const langSection = document.querySelector(".language-section");
 const svgRotator = document.querySelector(".svg-class");
 const languages = document.querySelectorAll(".language");
 const hamburger = document.querySelector(".hamburger-menu");
-const blackMobileMenu = document.querySelector(".black-menu");
 const bagCounter = document.querySelector("#bag");
 const downIcon = document.querySelector(".arrow-down-icon");
 const upIcon = document.querySelector(".arrow-up-icon");
 const upIconOffset = upIcon.offsetHeight;
 let hamburgerHeavy = document.querySelector(".hamburger-heavy");
+const blackMobileMenu = document.querySelector(".black-menu");
+
 let mobileHeavy = document.querySelector(".mobile-heavy");
 let mql = window.matchMedia("(max-width: 768px)");
 

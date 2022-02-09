@@ -26,8 +26,8 @@
 }
 
 .chef-img img {
-  width: 320px;
-  height: 320px;
+  width: 100%;
+  height: auto;
 }
 
 .chef-left-card {
@@ -65,7 +65,7 @@
   justify-content: space-evenly;
   margin-top: 200px;
 }
-.img-1-cont {
+.cont-img-1 {
   display: flex;
   gap: 0 1rem;
 }
