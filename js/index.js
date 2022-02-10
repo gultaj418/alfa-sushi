@@ -25,6 +25,7 @@ hamburger.addEventListener("click", () => {
   mobileHeavy.classList.add("heavy-background");
   hamburgerHeavy.classList.add("btn-active");
   document.body.style.overflowY = ["hidden"];
+  blackMobileMenu.classList.add("btn-active");
 });
 
 hamburgerHeavy.addEventListener("click", () => {

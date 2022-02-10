@@ -215,3 +215,14 @@
   margin-top: 50px;
   color: var(--light-grey);
 }
+.count-regulator {
+  background-color: var(--fade-button);
+  margin-left: 10px;
+}
+.minus,
+.plus,
+.count-num {
+  padding: 0 0;
+  color: #4d4d4d;
+  font-size: 18px;
+}
